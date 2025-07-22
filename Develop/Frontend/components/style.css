@@ -1,0 +1,151 @@
+:root{
+    --bg: #2E3440;
+    --card-bg: #3B4252;
+    --nav-bg: #3B4252;
+    --font-clr: #ECEFF4;
+    --accnt-font-clr: #E5E9F0;
+    --skill-clr: #5E81AC;
+    --accent: #D08770;
+    --shadow: #00000064;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+
+body{
+    background-color: var(--bg);
+    padding: 1rem 1.5rem;
+}
+
+/*
+    Navbar
+*/
+
+nav{
+    padding: .25rem;
+    border-radius: 2rem;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 20px var(--shadow);
+    background-color: var(--nav-bg);
+}
+
+.profile-pic{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn{
+    border-radius: 2rem;
+    padding: .7rem 2rem;
+    color: var(--font-clr);
+    
+    text-decoration: none;
+    text-align: center;
+
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: var(--accent);
+}
+
+.links{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: orange;
+}
+
+.link{
+    font-size: 1.2rem;
+    color: var(--font-clr);
+
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*
+    Card
+*/
+
+.card{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--card-bg);
+    box-shadow: 5px 5px 20px var(--shadow);
+    margin: 1rem 0;
+    color: var(--font-clr);
+}
+
+img{
+    width: 100%;
+}
+
+.card-img{
+    overflow: hidden;
+    border-radius: 1rem;
+    max-height: 15rem;
+}
+
+.card-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.skills{
+    display: flex;
+    margin-top: .8rem;
+}
+
+.skill{
+    font-size: 1rem;
+    color: var(--font-clr);
+
+    width: fit-content;
+    margin-right: .4rem;
+    padding: .4rem 1rem;
+
+    border-radius: .6rem;
+    background-color: var(--skill-clr);
+}
+
+.card-summary{
+    width: 100%;
+
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-btn{
+    width: 100%;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    margin-top: 1rem;
+    padding: .5rem 0;
+
+    display: flex;
+    justify-content: center;
+
+    color: var(--font-clr);
+    border-radius: 1rem;
+    background-color: var(--accent);
+}

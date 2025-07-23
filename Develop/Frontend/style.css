@@ -51,7 +51,7 @@ nav{
 
 .nav-btn{
     border-radius: 2rem;
-    padding: .7rem 2rem;
+    padding: 1rem 2rem;
     color: var(--font-clr);
     
     text-decoration: none;
@@ -108,16 +108,25 @@ header{
     font-size: 1.3rem;
 }
 
-.border{
-    width: 100%;
-    padding: 0 .7rem;
+header{
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
 }
 
-.border>span{
-    width: 100%;
-    height: .1rem;
+.skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: .8rem;
+    max-width: 30rem;
+    padding: .5rem .5rem;
+}
+
+.skills-title{
     display: block;
-    background-color: white;
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 /*
@@ -126,6 +135,8 @@ header{
 
 main{
     padding: 1rem 1.2rem;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -141,6 +152,16 @@ main{
     color: var(--font-clr);
 
     width: 80%;
+}
+
+.project-card{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    color: var(--font-clr);
+    background-color: var(--card-bg);
+    box-shadow: 5px 5px 20px var(--shadow);
 }
 
 img{
@@ -163,7 +184,7 @@ img{
     margin-top: 1rem;
 }
 
-.skills{
+.card-skills{
     display: flex;
     flex-wrap: wrap;
     margin-top: .8rem;
@@ -213,7 +234,7 @@ img{
 .carousel {
   position: relative;
   overflow: hidden;
-  width: 100%; /* Adjust based on your needs */
+  width: 607px;
 }
 
 .carousel-track {
@@ -252,6 +273,7 @@ img{
     border-radius: .5rem;
     background-color: var(--accent);
 }
+
 .carousel-btn.next { 
     right: 10px;
     font-size: 1.5rem;
@@ -267,3 +289,89 @@ img{
     background-color: var(--accent); 
 }
 
+
+
+/* 
+    Icons
+*/
+
+.icon{
+    width: 3.3rem;
+    height: 3.3rem;
+    padding: .5rem;
+}
+
+/*
+    About
+*/
+
+.about-card{
+    width: 80%;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--font-clr);
+    background-color: var(--card-bg);
+    box-shadow: 5px 5px 20px var(--shadow);
+}
+
+/*
+    Projects
+*/
+
+.projects{
+    display: flex;
+    padding: 0 1rem;
+    margin-top: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 640px){
+
+.main{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+header{
+    width: 55%;
+    display: block;
+    padding: 0 1rem;
+    text-align: left;
+    border-right-style: solid;
+    border-right-color: white;
+    border-right-width: .1rem;
+    border-bottom-style: none;
+}
+
+
+.carousel{
+    width: 707px;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+.summary{
+    text-align: left;
+}
+
+.skills{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: .8rem;
+    max-width: 30rem;
+    padding: .5rem .5rem;
+}
+
+.projects{
+	gap: 1rem;
+    display: grid;
+    margin-top: 1.5rem;
+	grid-template-columns: repeat(3, 1fr);
+}
+}
